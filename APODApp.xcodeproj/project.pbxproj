@@ -1,0 +1,1103 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E5D8AB25826A4CF59C74FAD /* Pods_APODApp_APODAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B95AD6FF99A95947581C74 /* Pods_APODApp_APODAppUITests.framework */; };
+		4845FE056D7C1E045817CB33 /* Pods_APODApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627B8667D8E2494D70CC8FCD /* Pods_APODApp.framework */; };
+		6FEFF4952794DFAA0070DC34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4942794DFAA0070DC34 /* AppDelegate.swift */; };
+		6FEFF4972794DFAA0070DC34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4962794DFAA0070DC34 /* SceneDelegate.swift */; };
+		6FEFF4992794DFAA0070DC34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4982794DFAA0070DC34 /* ViewController.swift */; };
+		6FEFF49C2794DFAA0070DC34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FEFF49A2794DFAA0070DC34 /* Main.storyboard */; };
+		6FEFF49E2794DFAB0070DC34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FEFF49D2794DFAB0070DC34 /* Assets.xcassets */; };
+		6FEFF4A12794DFAB0070DC34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FEFF49F2794DFAB0070DC34 /* LaunchScreen.storyboard */; };
+		6FEFF4AC2794DFAB0070DC34 /* APODAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4AB2794DFAB0070DC34 /* APODAppTests.swift */; };
+		6FEFF4B62794DFAB0070DC34 /* APODAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4B52794DFAB0070DC34 /* APODAppUITests.swift */; };
+		6FEFF4B82794DFAB0070DC34 /* APODAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4B72794DFAB0070DC34 /* APODAppUITestsLaunchTests.swift */; };
+		6FEFF4CF2794DFC30070DC34 /* APIURLRequestCreater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4C62794DFC30070DC34 /* APIURLRequestCreater.swift */; };
+		6FEFF4D02794DFC30070DC34 /* APIConfigurableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4C72794DFC30070DC34 /* APIConfigurableProtocol.swift */; };
+		6FEFF4D12794DFC30070DC34 /* APIRequestExecuter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4C82794DFC30070DC34 /* APIRequestExecuter.swift */; };
+		6FEFF4D22794DFC30070DC34 /* Mappables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4C92794DFC30070DC34 /* Mappables.swift */; };
+		6FEFF4D32794DFC30070DC34 /* UrlRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4CA2794DFC30070DC34 /* UrlRequestError.swift */; };
+		6FEFF4D42794DFC30070DC34 /* APIResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4CB2794DFC30070DC34 /* APIResponseParser.swift */; };
+		6FEFF4D52794DFC30070DC34 /* Usable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4CD2794DFC30070DC34 /* Usable.swift */; };
+		6FEFF4D62794DFC30070DC34 /* Parsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4CE2794DFC30070DC34 /* Parsable.swift */; };
+		6FEFF4DB2794DFE40070DC34 /* NSViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4D82794DFE40070DC34 /* NSViewExtension.swift */; };
+		6FEFF4DC2794DFE40070DC34 /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4D92794DFE40070DC34 /* ImageViewExtension.swift */; };
+		6FEFF4DD2794DFE40070DC34 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4DA2794DFE40070DC34 /* StringExtension.swift */; };
+		6FEFF5092794E0A20070DC34 /* APODSearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4E02794E0A20070DC34 /* APODSearchRepository.swift */; };
+		6FEFF50A2794E0A20070DC34 /* APODSearchRemoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4E22794E0A20070DC34 /* APODSearchRemoteStore.swift */; };
+		6FEFF50B2794E0A20070DC34 /* APODSearchRemoteDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4E42794E0A20070DC34 /* APODSearchRemoteDataMapper.swift */; };
+		6FEFF50C2794E0A20070DC34 /* APODSearchRepositoryContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4E62794E0A20070DC34 /* APODSearchRepositoryContainer.swift */; };
+		6FEFF50D2794E0A20070DC34 /* APODUsablesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4E82794E0A20070DC34 /* APODUsablesModel.swift */; };
+		6FEFF50E2794E0A20070DC34 /* APODParsableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4EA2794E0A20070DC34 /* APODParsableModel.swift */; };
+		6FEFF50F2794E0A20070DC34 /* APODSearchRepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4EC2794E0A20070DC34 /* APODSearchRepositoryFactory.swift */; };
+		6FEFF5102794E0A20070DC34 /* APODSearchRepositoryContainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4ED2794E0A20070DC34 /* APODSearchRepositoryContainerFactory.swift */; };
+		6FEFF5112794E0A20070DC34 /* APODSearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4EF2794E0A20070DC34 /* APODSearchInteractor.swift */; };
+		6FEFF5122794E0A20070DC34 /* APODSearchParamater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4F12794E0A20070DC34 /* APODSearchParamater.swift */; };
+		6FEFF5132794E0A20070DC34 /* APODSearchRequestCreater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4F22794E0A20070DC34 /* APODSearchRequestCreater.swift */; };
+		6FEFF5142794E0A20070DC34 /* APODAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4F32794E0A20070DC34 /* APODAPIHandler.swift */; };
+		6FEFF5152794E0A20070DC34 /* APODAPIHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4F42794E0A20070DC34 /* APODAPIHandlerProtocol.swift */; };
+		6FEFF5162794E0A20070DC34 /* APODSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4F62794E0A20070DC34 /* APODSearchView.swift */; };
+		6FEFF5172794E0A20070DC34 /* APODSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4F82794E0A20070DC34 /* APODSearchViewController.swift */; };
+		6FEFF5182794E0A20070DC34 /* APODSearchBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4FA2794E0A20070DC34 /* APODSearchBuilder.swift */; };
+		6FEFF5192794E0A20070DC34 /* APODSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4FC2794E0A20070DC34 /* APODSearchPresenter.swift */; };
+		6FEFF51A2794E0A20070DC34 /* APODSearchRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4FE2794E0A20070DC34 /* APODSearchRepositoryMock.swift */; };
+		6FEFF51B2794E0A20070DC34 /* MockEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF4FF2794E0A20070DC34 /* MockEnums.swift */; };
+		6FEFF51C2794E0A20070DC34 /* APODSearchRepositoryContainerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF5002794E0A20070DC34 /* APODSearchRepositoryContainerMock.swift */; };
+		6FEFF51D2794E0A20070DC34 /* MockAPIConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF5012794E0A20070DC34 /* MockAPIConfigurator.swift */; };
+		6FEFF51E2794E0A20070DC34 /* APODSearchRemoteDatastoreMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF5022794E0A20070DC34 /* APODSearchRemoteDatastoreMock.swift */; };
+		6FEFF51F2794E0A20070DC34 /* APODAPIHandlerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF5032794E0A20070DC34 /* APODAPIHandlerMock.swift */; };
+		6FEFF5202794E0A20070DC34 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF5042794E0A20070DC34 /* URLSessionMock.swift */; };
+		6FEFF5212794E0A20070DC34 /* APODSearchControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF5052794E0A20070DC34 /* APODSearchControllerMock.swift */; };
+		6FEFF5222794E0A20070DC34 /* APODSearchPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF5062794E0A20070DC34 /* APODSearchPresenterMock.swift */; };
+		6FEFF5232794E0A20070DC34 /* APODSearchInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF5072794E0A20070DC34 /* APODSearchInteractorMock.swift */; };
+		6FEFF5242794E0A20070DC34 /* APODSearchUrlSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF5082794E0A20070DC34 /* APODSearchUrlSessionMock.swift */; };
+		6FEFF52C2794E3110070DC34 /* APODSearchRemoteDataStoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF5252794E3110070DC34 /* APODSearchRemoteDataStoreTest.swift */; };
+		6FEFF52D2794E3110070DC34 /* APODSearchRepositoryContainerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF5262794E3110070DC34 /* APODSearchRepositoryContainerTest.swift */; };
+		6FEFF52E2794E3110070DC34 /* APODSearchRemoteDataMapperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF5272794E3110070DC34 /* APODSearchRemoteDataMapperTest.swift */; };
+		6FEFF52F2794E3110070DC34 /* APODSearchInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF5282794E3110070DC34 /* APODSearchInteractorTest.swift */; };
+		6FEFF5302794E3110070DC34 /* APIURLRequestCreaterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF5292794E3110070DC34 /* APIURLRequestCreaterTest.swift */; };
+		6FEFF5312794E3110070DC34 /* APODSearchRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF52A2794E3110070DC34 /* APODSearchRepositoryTest.swift */; };
+		6FEFF5322794E3110070DC34 /* APODSearchPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF52B2794E3110070DC34 /* APODSearchPresenterTest.swift */; };
+		6FEFF53427957DA30070DC34 /* ViewExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFF53327957DA30070DC34 /* ViewExtenstion.swift */; };
+		A8D63A845599B7C0BAA65DD2 /* Pods_APODAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA288E39C0EC3D3DACEDB6A /* Pods_APODAppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6FEFF4A82794DFAB0070DC34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEFF4892794DFAA0070DC34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FEFF4902794DFAA0070DC34;
+			remoteInfo = APODApp;
+		};
+		6FEFF4B22794DFAB0070DC34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FEFF4892794DFAA0070DC34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FEFF4902794DFAA0070DC34;
+			remoteInfo = APODApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06B95AD6FF99A95947581C74 /* Pods_APODApp_APODAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APODApp_APODAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09AAA0ABD92965BCA60B2B14 /* Pods-APODApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APODApp.debug.xcconfig"; path = "Target Support Files/Pods-APODApp/Pods-APODApp.debug.xcconfig"; sourceTree = "<group>"; };
+		0B5CB1358352BC5A1C517351 /* Pods-APODAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APODAppTests.debug.xcconfig"; path = "Target Support Files/Pods-APODAppTests/Pods-APODAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		487BE3A6D84AF63EE5421952 /* Pods-APODAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APODAppTests.release.xcconfig"; path = "Target Support Files/Pods-APODAppTests/Pods-APODAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		5FA288E39C0EC3D3DACEDB6A /* Pods_APODAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APODAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		627B8667D8E2494D70CC8FCD /* Pods_APODApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APODApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67D9992EB8BE6B2C0008008F /* Pods-APODApp-APODAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APODApp-APODAppUITests.release.xcconfig"; path = "Target Support Files/Pods-APODApp-APODAppUITests/Pods-APODApp-APODAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6FEFF4912794DFAA0070DC34 /* APODApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APODApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEFF4942794DFAA0070DC34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6FEFF4962794DFAA0070DC34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6FEFF4982794DFAA0070DC34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6FEFF49B2794DFAA0070DC34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6FEFF49D2794DFAB0070DC34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6FEFF4A02794DFAB0070DC34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6FEFF4A22794DFAB0070DC34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FEFF4A72794DFAB0070DC34 /* APODAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APODAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEFF4AB2794DFAB0070DC34 /* APODAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODAppTests.swift; sourceTree = "<group>"; };
+		6FEFF4B12794DFAB0070DC34 /* APODAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APODAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEFF4B52794DFAB0070DC34 /* APODAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODAppUITests.swift; sourceTree = "<group>"; };
+		6FEFF4B72794DFAB0070DC34 /* APODAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6FEFF4C62794DFC30070DC34 /* APIURLRequestCreater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIURLRequestCreater.swift; sourceTree = "<group>"; };
+		6FEFF4C72794DFC30070DC34 /* APIConfigurableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConfigurableProtocol.swift; sourceTree = "<group>"; };
+		6FEFF4C82794DFC30070DC34 /* APIRequestExecuter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestExecuter.swift; sourceTree = "<group>"; };
+		6FEFF4C92794DFC30070DC34 /* Mappables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mappables.swift; sourceTree = "<group>"; };
+		6FEFF4CA2794DFC30070DC34 /* UrlRequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlRequestError.swift; sourceTree = "<group>"; };
+		6FEFF4CB2794DFC30070DC34 /* APIResponseParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponseParser.swift; sourceTree = "<group>"; };
+		6FEFF4CD2794DFC30070DC34 /* Usable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usable.swift; sourceTree = "<group>"; };
+		6FEFF4CE2794DFC30070DC34 /* Parsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parsable.swift; sourceTree = "<group>"; };
+		6FEFF4D82794DFE40070DC34 /* NSViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSViewExtension.swift; sourceTree = "<group>"; };
+		6FEFF4D92794DFE40070DC34 /* ImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
+		6FEFF4DA2794DFE40070DC34 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		6FEFF4E02794E0A20070DC34 /* APODSearchRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchRepository.swift; sourceTree = "<group>"; };
+		6FEFF4E22794E0A20070DC34 /* APODSearchRemoteStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchRemoteStore.swift; sourceTree = "<group>"; };
+		6FEFF4E42794E0A20070DC34 /* APODSearchRemoteDataMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchRemoteDataMapper.swift; sourceTree = "<group>"; };
+		6FEFF4E62794E0A20070DC34 /* APODSearchRepositoryContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchRepositoryContainer.swift; sourceTree = "<group>"; };
+		6FEFF4E82794E0A20070DC34 /* APODUsablesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODUsablesModel.swift; sourceTree = "<group>"; };
+		6FEFF4EA2794E0A20070DC34 /* APODParsableModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODParsableModel.swift; sourceTree = "<group>"; };
+		6FEFF4EC2794E0A20070DC34 /* APODSearchRepositoryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchRepositoryFactory.swift; sourceTree = "<group>"; };
+		6FEFF4ED2794E0A20070DC34 /* APODSearchRepositoryContainerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchRepositoryContainerFactory.swift; sourceTree = "<group>"; };
+		6FEFF4EF2794E0A20070DC34 /* APODSearchInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchInteractor.swift; sourceTree = "<group>"; };
+		6FEFF4F12794E0A20070DC34 /* APODSearchParamater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchParamater.swift; sourceTree = "<group>"; };
+		6FEFF4F22794E0A20070DC34 /* APODSearchRequestCreater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchRequestCreater.swift; sourceTree = "<group>"; };
+		6FEFF4F32794E0A20070DC34 /* APODAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODAPIHandler.swift; sourceTree = "<group>"; };
+		6FEFF4F42794E0A20070DC34 /* APODAPIHandlerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODAPIHandlerProtocol.swift; sourceTree = "<group>"; };
+		6FEFF4F62794E0A20070DC34 /* APODSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchView.swift; sourceTree = "<group>"; };
+		6FEFF4F82794E0A20070DC34 /* APODSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchViewController.swift; sourceTree = "<group>"; };
+		6FEFF4FA2794E0A20070DC34 /* APODSearchBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchBuilder.swift; sourceTree = "<group>"; };
+		6FEFF4FC2794E0A20070DC34 /* APODSearchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchPresenter.swift; sourceTree = "<group>"; };
+		6FEFF4FE2794E0A20070DC34 /* APODSearchRepositoryMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchRepositoryMock.swift; sourceTree = "<group>"; };
+		6FEFF4FF2794E0A20070DC34 /* MockEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockEnums.swift; sourceTree = "<group>"; };
+		6FEFF5002794E0A20070DC34 /* APODSearchRepositoryContainerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchRepositoryContainerMock.swift; sourceTree = "<group>"; };
+		6FEFF5012794E0A20070DC34 /* MockAPIConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAPIConfigurator.swift; sourceTree = "<group>"; };
+		6FEFF5022794E0A20070DC34 /* APODSearchRemoteDatastoreMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchRemoteDatastoreMock.swift; sourceTree = "<group>"; };
+		6FEFF5032794E0A20070DC34 /* APODAPIHandlerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODAPIHandlerMock.swift; sourceTree = "<group>"; };
+		6FEFF5042794E0A20070DC34 /* URLSessionMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
+		6FEFF5052794E0A20070DC34 /* APODSearchControllerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchControllerMock.swift; sourceTree = "<group>"; };
+		6FEFF5062794E0A20070DC34 /* APODSearchPresenterMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchPresenterMock.swift; sourceTree = "<group>"; };
+		6FEFF5072794E0A20070DC34 /* APODSearchInteractorMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchInteractorMock.swift; sourceTree = "<group>"; };
+		6FEFF5082794E0A20070DC34 /* APODSearchUrlSessionMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchUrlSessionMock.swift; sourceTree = "<group>"; };
+		6FEFF5252794E3110070DC34 /* APODSearchRemoteDataStoreTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchRemoteDataStoreTest.swift; sourceTree = "<group>"; };
+		6FEFF5262794E3110070DC34 /* APODSearchRepositoryContainerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchRepositoryContainerTest.swift; sourceTree = "<group>"; };
+		6FEFF5272794E3110070DC34 /* APODSearchRemoteDataMapperTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchRemoteDataMapperTest.swift; sourceTree = "<group>"; };
+		6FEFF5282794E3110070DC34 /* APODSearchInteractorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchInteractorTest.swift; sourceTree = "<group>"; };
+		6FEFF5292794E3110070DC34 /* APIURLRequestCreaterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIURLRequestCreaterTest.swift; sourceTree = "<group>"; };
+		6FEFF52A2794E3110070DC34 /* APODSearchRepositoryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchRepositoryTest.swift; sourceTree = "<group>"; };
+		6FEFF52B2794E3110070DC34 /* APODSearchPresenterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODSearchPresenterTest.swift; sourceTree = "<group>"; };
+		6FEFF53327957DA30070DC34 /* ViewExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtenstion.swift; sourceTree = "<group>"; };
+		7429F442BC9D0D171930B4C8 /* Pods-APODApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APODApp.release.xcconfig"; path = "Target Support Files/Pods-APODApp/Pods-APODApp.release.xcconfig"; sourceTree = "<group>"; };
+		DFA002B770F270E58244E177 /* Pods-APODApp-APODAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APODApp-APODAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-APODApp-APODAppUITests/Pods-APODApp-APODAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6FEFF48E2794DFAA0070DC34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4845FE056D7C1E045817CB33 /* Pods_APODApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FEFF4A42794DFAB0070DC34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D63A845599B7C0BAA65DD2 /* Pods_APODAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FEFF4AE2794DFAB0070DC34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E5D8AB25826A4CF59C74FAD /* Pods_APODApp_APODAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39219EA0B2D34CEC8E4E8D6C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09AAA0ABD92965BCA60B2B14 /* Pods-APODApp.debug.xcconfig */,
+				7429F442BC9D0D171930B4C8 /* Pods-APODApp.release.xcconfig */,
+				DFA002B770F270E58244E177 /* Pods-APODApp-APODAppUITests.debug.xcconfig */,
+				67D9992EB8BE6B2C0008008F /* Pods-APODApp-APODAppUITests.release.xcconfig */,
+				0B5CB1358352BC5A1C517351 /* Pods-APODAppTests.debug.xcconfig */,
+				487BE3A6D84AF63EE5421952 /* Pods-APODAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		42991F25AC05D31D3707EE9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				627B8667D8E2494D70CC8FCD /* Pods_APODApp.framework */,
+				06B95AD6FF99A95947581C74 /* Pods_APODApp_APODAppUITests.framework */,
+				5FA288E39C0EC3D3DACEDB6A /* Pods_APODAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6FEFF4882794DFAA0070DC34 = {
+			isa = PBXGroup;
+			children = (
+				6FEFF4932794DFAA0070DC34 /* APODApp */,
+				6FEFF4AA2794DFAB0070DC34 /* APODAppTests */,
+				6FEFF4B42794DFAB0070DC34 /* APODAppUITests */,
+				6FEFF4922794DFAA0070DC34 /* Products */,
+				39219EA0B2D34CEC8E4E8D6C /* Pods */,
+				42991F25AC05D31D3707EE9D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6FEFF4922794DFAA0070DC34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FEFF4912794DFAA0070DC34 /* APODApp.app */,
+				6FEFF4A72794DFAB0070DC34 /* APODAppTests.xctest */,
+				6FEFF4B12794DFAB0070DC34 /* APODAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FEFF4932794DFAA0070DC34 /* APODApp */ = {
+			isa = PBXGroup;
+			children = (
+				6FEFF4F02794E0A20070DC34 /* APODNetworkServices */,
+				6FEFF4F92794E0A20070DC34 /* Builder */,
+				6FEFF4F72794E0A20070DC34 /* Controller */,
+				6FEFF4DE2794E0A20070DC34 /* DataLayer */,
+				6FEFF4EE2794E0A20070DC34 /* Interactor */,
+				6FEFF4FD2794E0A20070DC34 /* Mock */,
+				6FEFF4FB2794E0A20070DC34 /* Presentor */,
+				6FEFF4F52794E0A20070DC34 /* View */,
+				6FEFF4D72794DFE40070DC34 /* Extension */,
+				6FEFF4C42794DFC30070DC34 /* NetworkManager */,
+				6FEFF4942794DFAA0070DC34 /* AppDelegate.swift */,
+				6FEFF4962794DFAA0070DC34 /* SceneDelegate.swift */,
+				6FEFF4982794DFAA0070DC34 /* ViewController.swift */,
+				6FEFF49A2794DFAA0070DC34 /* Main.storyboard */,
+				6FEFF49D2794DFAB0070DC34 /* Assets.xcassets */,
+				6FEFF49F2794DFAB0070DC34 /* LaunchScreen.storyboard */,
+				6FEFF4A22794DFAB0070DC34 /* Info.plist */,
+			);
+			path = APODApp;
+			sourceTree = "<group>";
+		};
+		6FEFF4AA2794DFAB0070DC34 /* APODAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				6FEFF5292794E3110070DC34 /* APIURLRequestCreaterTest.swift */,
+				6FEFF5282794E3110070DC34 /* APODSearchInteractorTest.swift */,
+				6FEFF52B2794E3110070DC34 /* APODSearchPresenterTest.swift */,
+				6FEFF5272794E3110070DC34 /* APODSearchRemoteDataMapperTest.swift */,
+				6FEFF5252794E3110070DC34 /* APODSearchRemoteDataStoreTest.swift */,
+				6FEFF5262794E3110070DC34 /* APODSearchRepositoryContainerTest.swift */,
+				6FEFF52A2794E3110070DC34 /* APODSearchRepositoryTest.swift */,
+				6FEFF4AB2794DFAB0070DC34 /* APODAppTests.swift */,
+			);
+			path = APODAppTests;
+			sourceTree = "<group>";
+		};
+		6FEFF4B42794DFAB0070DC34 /* APODAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6FEFF4B52794DFAB0070DC34 /* APODAppUITests.swift */,
+				6FEFF4B72794DFAB0070DC34 /* APODAppUITestsLaunchTests.swift */,
+			);
+			path = APODAppUITests;
+			sourceTree = "<group>";
+		};
+		6FEFF4C42794DFC30070DC34 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				6FEFF4C52794DFC30070DC34 /* APIConfigurator */,
+				6FEFF4CC2794DFC30070DC34 /* Protocols */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		6FEFF4C52794DFC30070DC34 /* APIConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				6FEFF4C62794DFC30070DC34 /* APIURLRequestCreater.swift */,
+				6FEFF4C72794DFC30070DC34 /* APIConfigurableProtocol.swift */,
+				6FEFF4C82794DFC30070DC34 /* APIRequestExecuter.swift */,
+				6FEFF4C92794DFC30070DC34 /* Mappables.swift */,
+				6FEFF4CA2794DFC30070DC34 /* UrlRequestError.swift */,
+				6FEFF4CB2794DFC30070DC34 /* APIResponseParser.swift */,
+			);
+			path = APIConfigurator;
+			sourceTree = "<group>";
+		};
+		6FEFF4CC2794DFC30070DC34 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6FEFF4CD2794DFC30070DC34 /* Usable.swift */,
+				6FEFF4CE2794DFC30070DC34 /* Parsable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6FEFF4D72794DFE40070DC34 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6FEFF4D82794DFE40070DC34 /* NSViewExtension.swift */,
+				6FEFF4D92794DFE40070DC34 /* ImageViewExtension.swift */,
+				6FEFF4DA2794DFE40070DC34 /* StringExtension.swift */,
+				6FEFF53327957DA30070DC34 /* ViewExtenstion.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		6FEFF4DE2794E0A20070DC34 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				6FEFF4DF2794E0A20070DC34 /* Repository */,
+				6FEFF4E12794E0A20070DC34 /* RemoteDataLayer */,
+				6FEFF4E32794E0A20070DC34 /* Mapper */,
+				6FEFF4E52794E0A20070DC34 /* RepositoryContainer */,
+				6FEFF4E72794E0A20070DC34 /* Usables */,
+				6FEFF4E92794E0A20070DC34 /* Parsables */,
+				6FEFF4EB2794E0A20070DC34 /* Factory */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		6FEFF4DF2794E0A20070DC34 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				6FEFF4E02794E0A20070DC34 /* APODSearchRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		6FEFF4E12794E0A20070DC34 /* RemoteDataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				6FEFF4E22794E0A20070DC34 /* APODSearchRemoteStore.swift */,
+			);
+			path = RemoteDataLayer;
+			sourceTree = "<group>";
+		};
+		6FEFF4E32794E0A20070DC34 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				6FEFF4E42794E0A20070DC34 /* APODSearchRemoteDataMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		6FEFF4E52794E0A20070DC34 /* RepositoryContainer */ = {
+			isa = PBXGroup;
+			children = (
+				6FEFF4E62794E0A20070DC34 /* APODSearchRepositoryContainer.swift */,
+			);
+			path = RepositoryContainer;
+			sourceTree = "<group>";
+		};
+		6FEFF4E72794E0A20070DC34 /* Usables */ = {
+			isa = PBXGroup;
+			children = (
+				6FEFF4E82794E0A20070DC34 /* APODUsablesModel.swift */,
+			);
+			path = Usables;
+			sourceTree = "<group>";
+		};
+		6FEFF4E92794E0A20070DC34 /* Parsables */ = {
+			isa = PBXGroup;
+			children = (
+				6FEFF4EA2794E0A20070DC34 /* APODParsableModel.swift */,
+			);
+			path = Parsables;
+			sourceTree = "<group>";
+		};
+		6FEFF4EB2794E0A20070DC34 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				6FEFF4EC2794E0A20070DC34 /* APODSearchRepositoryFactory.swift */,
+				6FEFF4ED2794E0A20070DC34 /* APODSearchRepositoryContainerFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		6FEFF4EE2794E0A20070DC34 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				6FEFF4EF2794E0A20070DC34 /* APODSearchInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		6FEFF4F02794E0A20070DC34 /* APODNetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				6FEFF4F12794E0A20070DC34 /* APODSearchParamater.swift */,
+				6FEFF4F22794E0A20070DC34 /* APODSearchRequestCreater.swift */,
+				6FEFF4F32794E0A20070DC34 /* APODAPIHandler.swift */,
+				6FEFF4F42794E0A20070DC34 /* APODAPIHandlerProtocol.swift */,
+			);
+			path = APODNetworkServices;
+			sourceTree = "<group>";
+		};
+		6FEFF4F52794E0A20070DC34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6FEFF4F62794E0A20070DC34 /* APODSearchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6FEFF4F72794E0A20070DC34 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6FEFF4F82794E0A20070DC34 /* APODSearchViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6FEFF4F92794E0A20070DC34 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				6FEFF4FA2794E0A20070DC34 /* APODSearchBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		6FEFF4FB2794E0A20070DC34 /* Presentor */ = {
+			isa = PBXGroup;
+			children = (
+				6FEFF4FC2794E0A20070DC34 /* APODSearchPresenter.swift */,
+			);
+			path = Presentor;
+			sourceTree = "<group>";
+		};
+		6FEFF4FD2794E0A20070DC34 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				6FEFF4FE2794E0A20070DC34 /* APODSearchRepositoryMock.swift */,
+				6FEFF4FF2794E0A20070DC34 /* MockEnums.swift */,
+				6FEFF5002794E0A20070DC34 /* APODSearchRepositoryContainerMock.swift */,
+				6FEFF5012794E0A20070DC34 /* MockAPIConfigurator.swift */,
+				6FEFF5022794E0A20070DC34 /* APODSearchRemoteDatastoreMock.swift */,
+				6FEFF5032794E0A20070DC34 /* APODAPIHandlerMock.swift */,
+				6FEFF5042794E0A20070DC34 /* URLSessionMock.swift */,
+				6FEFF5052794E0A20070DC34 /* APODSearchControllerMock.swift */,
+				6FEFF5062794E0A20070DC34 /* APODSearchPresenterMock.swift */,
+				6FEFF5072794E0A20070DC34 /* APODSearchInteractorMock.swift */,
+				6FEFF5082794E0A20070DC34 /* APODSearchUrlSessionMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6FEFF4902794DFAA0070DC34 /* APODApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FEFF4BB2794DFAB0070DC34 /* Build configuration list for PBXNativeTarget "APODApp" */;
+			buildPhases = (
+				37D13031076A536671D24C9A /* [CP] Check Pods Manifest.lock */,
+				6FEFF48D2794DFAA0070DC34 /* Sources */,
+				6FEFF48E2794DFAA0070DC34 /* Frameworks */,
+				6FEFF48F2794DFAA0070DC34 /* Resources */,
+				D119EF7D83514B1412F4E320 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APODApp;
+			productName = APODApp;
+			productReference = 6FEFF4912794DFAA0070DC34 /* APODApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6FEFF4A62794DFAB0070DC34 /* APODAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FEFF4BE2794DFAB0070DC34 /* Build configuration list for PBXNativeTarget "APODAppTests" */;
+			buildPhases = (
+				403754C623C4345D4F9677C2 /* [CP] Check Pods Manifest.lock */,
+				6FEFF4A32794DFAB0070DC34 /* Sources */,
+				6FEFF4A42794DFAB0070DC34 /* Frameworks */,
+				6FEFF4A52794DFAB0070DC34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FEFF4A92794DFAB0070DC34 /* PBXTargetDependency */,
+			);
+			name = APODAppTests;
+			productName = APODAppTests;
+			productReference = 6FEFF4A72794DFAB0070DC34 /* APODAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6FEFF4B02794DFAB0070DC34 /* APODAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FEFF4C12794DFAB0070DC34 /* Build configuration list for PBXNativeTarget "APODAppUITests" */;
+			buildPhases = (
+				BA74300044944C1EBA806A42 /* [CP] Check Pods Manifest.lock */,
+				6FEFF4AD2794DFAB0070DC34 /* Sources */,
+				6FEFF4AE2794DFAB0070DC34 /* Frameworks */,
+				6FEFF4AF2794DFAB0070DC34 /* Resources */,
+				EA082BCBA2B2F270D17FC6CE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FEFF4B32794DFAB0070DC34 /* PBXTargetDependency */,
+			);
+			name = APODAppUITests;
+			productName = APODAppUITests;
+			productReference = 6FEFF4B12794DFAB0070DC34 /* APODAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6FEFF4892794DFAA0070DC34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					6FEFF4902794DFAA0070DC34 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					6FEFF4A62794DFAB0070DC34 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 6FEFF4902794DFAA0070DC34;
+					};
+					6FEFF4B02794DFAB0070DC34 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 6FEFF4902794DFAA0070DC34;
+					};
+				};
+			};
+			buildConfigurationList = 6FEFF48C2794DFAA0070DC34 /* Build configuration list for PBXProject "APODApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6FEFF4882794DFAA0070DC34;
+			productRefGroup = 6FEFF4922794DFAA0070DC34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6FEFF4902794DFAA0070DC34 /* APODApp */,
+				6FEFF4A62794DFAB0070DC34 /* APODAppTests */,
+				6FEFF4B02794DFAB0070DC34 /* APODAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6FEFF48F2794DFAA0070DC34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FEFF4A12794DFAB0070DC34 /* LaunchScreen.storyboard in Resources */,
+				6FEFF49E2794DFAB0070DC34 /* Assets.xcassets in Resources */,
+				6FEFF49C2794DFAA0070DC34 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FEFF4A52794DFAB0070DC34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FEFF4AF2794DFAB0070DC34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37D13031076A536671D24C9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-APODApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		403754C623C4345D4F9677C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-APODAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA74300044944C1EBA806A42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-APODApp-APODAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D119EF7D83514B1412F4E320 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APODApp/Pods-APODApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APODApp/Pods-APODApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-APODApp/Pods-APODApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA082BCBA2B2F270D17FC6CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APODApp-APODAppUITests/Pods-APODApp-APODAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APODApp-APODAppUITests/Pods-APODApp-APODAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-APODApp-APODAppUITests/Pods-APODApp-APODAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6FEFF48D2794DFAA0070DC34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FEFF50B2794E0A20070DC34 /* APODSearchRemoteDataMapper.swift in Sources */,
+				6FEFF5092794E0A20070DC34 /* APODSearchRepository.swift in Sources */,
+				6FEFF5132794E0A20070DC34 /* APODSearchRequestCreater.swift in Sources */,
+				6FEFF5102794E0A20070DC34 /* APODSearchRepositoryContainerFactory.swift in Sources */,
+				6FEFF4D42794DFC30070DC34 /* APIResponseParser.swift in Sources */,
+				6FEFF4DB2794DFE40070DC34 /* NSViewExtension.swift in Sources */,
+				6FEFF4992794DFAA0070DC34 /* ViewController.swift in Sources */,
+				6FEFF50E2794E0A20070DC34 /* APODParsableModel.swift in Sources */,
+				6FEFF4D12794DFC30070DC34 /* APIRequestExecuter.swift in Sources */,
+				6FEFF4CF2794DFC30070DC34 /* APIURLRequestCreater.swift in Sources */,
+				6FEFF5242794E0A20070DC34 /* APODSearchUrlSessionMock.swift in Sources */,
+				6FEFF4952794DFAA0070DC34 /* AppDelegate.swift in Sources */,
+				6FEFF51F2794E0A20070DC34 /* APODAPIHandlerMock.swift in Sources */,
+				6FEFF5212794E0A20070DC34 /* APODSearchControllerMock.swift in Sources */,
+				6FEFF5202794E0A20070DC34 /* URLSessionMock.swift in Sources */,
+				6FEFF4DC2794DFE40070DC34 /* ImageViewExtension.swift in Sources */,
+				6FEFF50C2794E0A20070DC34 /* APODSearchRepositoryContainer.swift in Sources */,
+				6FEFF4972794DFAA0070DC34 /* SceneDelegate.swift in Sources */,
+				6FEFF5232794E0A20070DC34 /* APODSearchInteractorMock.swift in Sources */,
+				6FEFF51B2794E0A20070DC34 /* MockEnums.swift in Sources */,
+				6FEFF50A2794E0A20070DC34 /* APODSearchRemoteStore.swift in Sources */,
+				6FEFF50D2794E0A20070DC34 /* APODUsablesModel.swift in Sources */,
+				6FEFF5162794E0A20070DC34 /* APODSearchView.swift in Sources */,
+				6FEFF5152794E0A20070DC34 /* APODAPIHandlerProtocol.swift in Sources */,
+				6FEFF50F2794E0A20070DC34 /* APODSearchRepositoryFactory.swift in Sources */,
+				6FEFF5112794E0A20070DC34 /* APODSearchInteractor.swift in Sources */,
+				6FEFF51E2794E0A20070DC34 /* APODSearchRemoteDatastoreMock.swift in Sources */,
+				6FEFF4DD2794DFE40070DC34 /* StringExtension.swift in Sources */,
+				6FEFF4D62794DFC30070DC34 /* Parsable.swift in Sources */,
+				6FEFF5172794E0A20070DC34 /* APODSearchViewController.swift in Sources */,
+				6FEFF51D2794E0A20070DC34 /* MockAPIConfigurator.swift in Sources */,
+				6FEFF5192794E0A20070DC34 /* APODSearchPresenter.swift in Sources */,
+				6FEFF5182794E0A20070DC34 /* APODSearchBuilder.swift in Sources */,
+				6FEFF5122794E0A20070DC34 /* APODSearchParamater.swift in Sources */,
+				6FEFF4D22794DFC30070DC34 /* Mappables.swift in Sources */,
+				6FEFF4D52794DFC30070DC34 /* Usable.swift in Sources */,
+				6FEFF51C2794E0A20070DC34 /* APODSearchRepositoryContainerMock.swift in Sources */,
+				6FEFF4D32794DFC30070DC34 /* UrlRequestError.swift in Sources */,
+				6FEFF5222794E0A20070DC34 /* APODSearchPresenterMock.swift in Sources */,
+				6FEFF51A2794E0A20070DC34 /* APODSearchRepositoryMock.swift in Sources */,
+				6FEFF53427957DA30070DC34 /* ViewExtenstion.swift in Sources */,
+				6FEFF4D02794DFC30070DC34 /* APIConfigurableProtocol.swift in Sources */,
+				6FEFF5142794E0A20070DC34 /* APODAPIHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FEFF4A32794DFAB0070DC34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FEFF52E2794E3110070DC34 /* APODSearchRemoteDataMapperTest.swift in Sources */,
+				6FEFF4AC2794DFAB0070DC34 /* APODAppTests.swift in Sources */,
+				6FEFF5322794E3110070DC34 /* APODSearchPresenterTest.swift in Sources */,
+				6FEFF52F2794E3110070DC34 /* APODSearchInteractorTest.swift in Sources */,
+				6FEFF5312794E3110070DC34 /* APODSearchRepositoryTest.swift in Sources */,
+				6FEFF5302794E3110070DC34 /* APIURLRequestCreaterTest.swift in Sources */,
+				6FEFF52C2794E3110070DC34 /* APODSearchRemoteDataStoreTest.swift in Sources */,
+				6FEFF52D2794E3110070DC34 /* APODSearchRepositoryContainerTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FEFF4AD2794DFAB0070DC34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FEFF4B82794DFAB0070DC34 /* APODAppUITestsLaunchTests.swift in Sources */,
+				6FEFF4B62794DFAB0070DC34 /* APODAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FEFF4A92794DFAB0070DC34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FEFF4902794DFAA0070DC34 /* APODApp */;
+			targetProxy = 6FEFF4A82794DFAB0070DC34 /* PBXContainerItemProxy */;
+		};
+		6FEFF4B32794DFAB0070DC34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FEFF4902794DFAA0070DC34 /* APODApp */;
+			targetProxy = 6FEFF4B22794DFAB0070DC34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6FEFF49A2794DFAA0070DC34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FEFF49B2794DFAA0070DC34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6FEFF49F2794DFAB0070DC34 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FEFF4A02794DFAB0070DC34 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6FEFF4B92794DFAB0070DC34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6FEFF4BA2794DFAB0070DC34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6FEFF4BC2794DFAB0070DC34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09AAA0ABD92965BCA60B2B14 /* Pods-APODApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UMW3NKDH68;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = APODApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Subho.APODApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6FEFF4BD2794DFAB0070DC34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7429F442BC9D0D171930B4C8 /* Pods-APODApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UMW3NKDH68;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = APODApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Subho.APODApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6FEFF4BF2794DFAB0070DC34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B5CB1358352BC5A1C517351 /* Pods-APODAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UMW3NKDH68;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Subho.APODAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APODApp.app/APODApp";
+			};
+			name = Debug;
+		};
+		6FEFF4C02794DFAB0070DC34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 487BE3A6D84AF63EE5421952 /* Pods-APODAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UMW3NKDH68;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Subho.APODAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APODApp.app/APODApp";
+			};
+			name = Release;
+		};
+		6FEFF4C22794DFAB0070DC34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFA002B770F270E58244E177 /* Pods-APODApp-APODAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UMW3NKDH68;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Subho.APODAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = APODApp;
+			};
+			name = Debug;
+		};
+		6FEFF4C32794DFAB0070DC34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67D9992EB8BE6B2C0008008F /* Pods-APODApp-APODAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UMW3NKDH68;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Subho.APODAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = APODApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6FEFF48C2794DFAA0070DC34 /* Build configuration list for PBXProject "APODApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FEFF4B92794DFAB0070DC34 /* Debug */,
+				6FEFF4BA2794DFAB0070DC34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FEFF4BB2794DFAB0070DC34 /* Build configuration list for PBXNativeTarget "APODApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FEFF4BC2794DFAB0070DC34 /* Debug */,
+				6FEFF4BD2794DFAB0070DC34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FEFF4BE2794DFAB0070DC34 /* Build configuration list for PBXNativeTarget "APODAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FEFF4BF2794DFAB0070DC34 /* Debug */,
+				6FEFF4C02794DFAB0070DC34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FEFF4C12794DFAB0070DC34 /* Build configuration list for PBXNativeTarget "APODAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FEFF4C22794DFAB0070DC34 /* Debug */,
+				6FEFF4C32794DFAB0070DC34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6FEFF4892794DFAA0070DC34 /* Project object */;
+}
